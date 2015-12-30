@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="demo-manager"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="${rootArtifactId}-components" dir="components" name="${rootArtifactId}-components">
+      <modules>
+        <module id="com.digiwes.demo.mgt" dir="com.digiwes.demo.mgt" name="com.digiwes.demo.mgt">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="com.digiwes.demo.mgt.ui" dir="com.digiwes.demo.mgt.ui" name="com.digiwes.demo.mgt.ui">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+                <include>**/*.jsp</include>
+                <include>**/*.html</include>
+                <include>**/*.properties</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.gif</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="com.digiwes.demo.ds.mgt" dir="com.digiwes.demo.ds.mgt" name="com.digiwes.demo.ds.mgt">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="com.digiwes.demo.ds.mgt.ui" dir="com.digiwes.demo.ds.mgt.ui" name="com.digiwes.demo.ds.mgt.ui">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+                <include>**/*.jsp</include>
+                <include>**/*.html</include>
+                <include>**/*.properties</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.gif</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="com.digiwes.demo.ds.ann.mgt" dir="com.digiwes.demo.ds.ann.mgt" name="com.digiwes.demo.ds.ann.mgt">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="com.digiwes.demo.ds.ann.mgt.ui" dir="com.digiwes.demo.ds.ann.mgt.ui" name="com.digiwes.demo.ds.ann.mgt.ui">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.xml</include>
+                <include>**/*.jsp</include>
+                <include>**/*.html</include>
+                <include>**/*.properties</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>src/main/resources</directory>
+              <includes>
+                <include>**/*.gif</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+      </modules>
+    </module>
+    <module id="${rootArtifactId}-features" dir="features" name="${rootArtifactId}-features">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>feature.properties</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <modules>
+        <module id="com.digiwes.demo.mgt.feature" dir="com.digiwes.demo.mgt.feature" name="com.digiwes.demo.mgt.feature" />
+        <module id="com.digiwes.demo.mgt.ui.feature" dir="com.digiwes.demo.mgt.ui.feature" name="com.digiwes.demo.mgt.ui.feature" />
+        <module id="com.digiwes.demo.mgt.server.feature" dir="com.digiwes.demo.mgt.server.feature" name="com.digiwes.demo.mgt.server.feature" />
+        <module id="com.digiwes.demo.ds.mgt.feature" dir="com.digiwes.demo.ds.mgt.feature" name="com.digiwes.demo.ds.mgt.feature" />
+        <module id="com.digiwes.demo.ds.mgt.server.feature" dir="com.digiwes.demo.ds.mgt.server.feature" name="com.digiwes.demo.ds.mgt.server.feature" />
+        <module id="com.digiwes.demo.ds.mgt.ui.feature" dir="com.digiwes.demo.ds.mgt.ui.feature" name="com.digiwes.demo.ds.mgt.ui.feature" />
+        <module id="com.digiwes.demo.ds.ann.mgt.server.feature" dir="com.digiwes.demo.ds.ann.mgt.server.feature" name="com.digiwes.demo.ds.ann.mgt.server.feature" />
+        <module id="com.digiwes.demo.ds.ann.mgt.ui.feature" dir="com.digiwes.demo.ds.ann.mgt.ui.feature" name="com.digiwes.demo.ds.ann.mgt.ui.feature" />
+        <module id="com.digiwes.demo.ds.ann.mgt.feature" dir="com.digiwes.demo.ds.ann.mgt.feature" name="com.digiwes.demo.ds.ann.mgt.feature" />
+      </modules>
+    </module>
+    <module id="${rootArtifactId}-repository" dir="repository" name="${rootArtifactId}-repository" />
+  </modules>
+</archetype-descriptor>
