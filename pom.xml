@@ -4,7 +4,7 @@
 
   <groupId>com.digiwes</groupId>
   <artifactId>demo-manager-archetype</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
   <packaging>maven-archetype</packaging>
 
   <name>demo-manager-archetype</name>
@@ -42,4 +42,21 @@
   <description>Demo Manager</description>
 
   <url>http://www.digiwes.com</url>
+
+  <developers>
+    <developer>
+      <name>Digiwes Developer</name>
+      <email>dev@digiwes.com</email>
+      <organization>DIGIWES</organization>
+      <organizationUrl>http://www.digiwes.com/</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/digiwes/wes-parent.git/demo-manager</connection>
+    <developerConnection>scm:git:https://github.com/digiwes/wes-parent.git/demo-manager</developerConnection>
+    <url>https://github.com/digiwes/wes-parent.git/demo-manager</url>
+  </scm>
+
+  <distributionManagement />
 </project>

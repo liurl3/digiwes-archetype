@@ -19,7 +19,7 @@ public class EmployeeServiceComponent {
     }
 
     /**
-     * 注册服务
+     * Regist Service
      * @param employeeService
      */
     public void setEmployeeService(IEmployeeService employeeService){
@@ -28,7 +28,7 @@ public class EmployeeServiceComponent {
     }
 
     /**
-     * 注销服务
+     * Cancel Service
      * @param employeeService
      */
     public void unsetEmployeeService(IEmployeeService employeeService){
